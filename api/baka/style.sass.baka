@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Karla&family=Roboto+Mono&display=swap')
+
+* 
+    margin: 0
+    padding: 0
+
+
+.header 
+    margin-right: 10%
+
+
+//  **************LEFT PART************* 
+    
+.col-3  
+    background-color: rgb(255, 255, 255)
+    // border-right: 1px solid #a7a1a1 
+    height: 90vh 
+
+    
+.logo  
+    display: flex
+    align-items: center
+    margin-left: 22% 
+    margin-top: 10px
+
+
+.logo img 
+    width: 30px
+    height: auto
+    margin-right: 10px
+
+
+.responsive-font-example 
+    font-family: 'Dangrek', cursive
+    margin-top: 5%
+    margin-left: 5%
+    font-size: x-large
+
+
+li 
+    font-size: 1.2em
+    font-weight: 300
+    list-style-type: none
+    margin-top: 5%
+    margin-left: 23% 
+
+.explorer
+    font-weight: bold
+    text-decoration: none
+    color: black
+
+.hastag
+    stroke-width: 0
+    fill: black
+    margin-left: 2%
+
+
+.img-hashtag
+    width: 8%
+    float: left
+    margin-right: 15px
+    margin-top: 5px
+    font-weight: bold
+
+
+.img-more
+    width: 8%
+    float: left
+    margin-right: 15px
+    margin-top: 5px
+
+//  **************MIDDLE PART************ 
+.col-6 
+    border-right: 1px solid #a7a1a1 
+    border-left: 1px solid #a7a1a1 
+
+.searchbar
+    display: flex
+    justify-content: center
+    flex-direction : column
+
+
+.searchbar-control 
+    border-radius: 20px
+    border: 1px solid #EBEEF0
+    background-color: #EBEEF0
+    margin-top: 5px
+    padding: 10px 0 10px 8%
+    width: 80%
+    height: 45px
+
+
+.searchbar-control:focus
+    outline: none
+    box-shadow: none
+    border: 1px solid #cc00ff
+
+
+.loupe 
+    width: 20px
+    color: blue
+    height: 20px
+    margin-top: 20px
+    margin-left: 10px
+    position: absolute
+
+.nav-bar-settings
+    position: relative
+    margin-left: 84%
+    margin-top: -5%
+
+.title
+    margin-top: 5%
+    font-size : 1.3em
+    font-weight: bold
+    font-family: Georgia, 'Times New Roman', Times, serif
+
+
+.tendances 
+    border:none
+    background-color: none
+    border-block: none
+    border-inline: none
+    text-align: left
+    background-color: white
+    height: 5.8em
+    margin-bottom: 0.1em
+    
+
+.tendances:hover
+    background-color: #f3f3f3
+
+
+.t-title
+    font-size: 0.8em
+    color: #d5d3d3
+    margin-bottom: 1px
+    color: #696969
+    font-family: Helvetica, sans-serif
+
+
+.t-category
+    font-size: 1em
+    font-weight: bold
+    margin-bottom: 1px
+    
+
+.t-tweets
+    font-size: 0.8em
+    color: #696969
+    ont-family: Helvetica, sans-serif
+
+
+.more
+    margin-left: 80%
+
+
+//  *************RIGHT PART*************** 
+.slider-right 
+    border: 1px solid #EBEEF0
+    margin-top: 15px 
+    border-radius: 20px
+    width: 100%
+    height: 20em
+    margin-left: 7%
+
+
+.grid 
+    //  display: inline-grid 
+    //  margin-top: 15% 
+    //  padding: 0 40px 0 40px 
+
+
+.new
+    //  font-size: 1.5em 
+    padding-top: 5%
+    font-family: bold
+    font-family: 'Dangrek', cursive
+    //  text-align: center 
+
+.google
+    width: 20px
+    height: 20px
+    margin-right: 5px
+    margin-top: 2px
+
+.apple 
+    width: 20px
+    height: 20px
+    margin-right: 5px
+    margin-top: 2px
+
+.new-2 
+    //  margin: auto 
+    font-size: 0.8em
+
+
+// buttons 
+//     color: #565656 
+//     font-size: 1.8em
+//     font-family: 'Open Sans', sans-serif
+//     font-weight: 300
+//     padding-right: 4vh
+
+
+.btn-light 
+    border-radius: 42px
+    font-size: 1em
+    width: 88%
+    margin-top: 3%
+    margin-left: 8% 
+
+
+.text-new 
+    margin-top: 5%
+    font-size: 0.7em
+
+
+.condition 
+    font-size: 0.7em
+    margin-top: 5%
+    margin-left: 7%
+
+
+// .btn-ex
+//     border: none
+//     border-radius: 42px
+//     text-align: center
+
+    
+// .btn-settings
+//     border: none
+//     border-radius: 42px
+//     text-align: center
+
+
+//   **************FOOTER************** 
+footer 
+    background-color: #FF92A9
+    height: 10vh
+    overflow: hidden
+
+
+.top-text
+    // font-family: 'Dangrek', cursive 
+    color: #FFFFFF
+    margin-left: 18%
+    margin-top: 10px
+
+
+.down-text
+    //  font-family: 'Dangrek', cursive 
+    color: #FFFFFF
+    margin-left: 18%
+
+
+.connexion
+    display: flex
+    justify-content: flex-end
+    margin-top: 4% 
+
+    
+.btn-outline-primary 
+    border-radius: 42px
+    border: white solid 1px
+    font-size: 0.90em 
+    color : white
+    margin-right: 5%
+
+.btn-light-1 
+    border-radius: 42px
+    background-color: white
+    font-size: 0.90em
+
+input[type="search"]::-webkit-search-cancel-button
+    -webkit-appearance: none
+    height: 1em
+    width: 1em
+    margin-right: 0.5em
+    border-radius: 50em
+    background: url(../img/times-circle-svg.svg) no-repeat 50% 50%
+    background-size: contain
+    opacity: 1

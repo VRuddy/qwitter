@@ -1,0 +1,332 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Karla&family=Roboto+Mono&display=swap')
+
+* 
+    margin: 0
+    padding: 0
+
+
+//  **************LEFT PART************* 
+col-3  
+    height: 100vh 
+    border-right: 1px solid #a7a1a1
+    // position: fixed
+
+.logo  
+    display: flex
+    align-items: center
+    margin-left: 13% 
+    margin-top: 20px
+
+.img-fluid
+    width: 100%
+    height: auto
+
+.logo img 
+    width: 30px
+    height: auto
+    margin-right: 10px
+
+
+
+.responsive-font-example 
+    font-family: 'Dangrek', cursive
+    margin-top: 8%
+    margin-left: 5%
+    font-size: x-large
+
+a 
+    text-decoration: none
+
+
+.nav-item
+    font-size: 1.2em
+    font-weight: 300
+    list-style-type: none
+    margin-top: 15%
+    text-decoration: none
+    display: grid
+
+
+.nav-link
+    margin-bottom: 10%
+
+.svg-nav-item
+    margin-right: 3%
+
+span
+    color: pink
+
+.tweet-navbar 
+    border-radius: 20px
+    font-size: 0.70em
+    padding-top: 5%
+    padding-bottom: 5%
+    background-color: #ff97b7
+    color: white
+    width: 60%
+    height: 95%
+    border: none
+
+
+
+.tweet-navbar:hover 
+    background-color: #ff5e80
+
+.avatar-min
+    width: 10%
+
+.avatar-text
+    transform: translate(15%, -100%)
+    font-weight: bold
+    font-size: x-small
+
+#toggleDark
+    cursor: pointer
+
+@media screen and (max-width: 1010px) 
+    span
+        display: none 
+
+    .responsive-font-example 
+        display: none
+
+    .logo
+        margin-left: 26%
+
+@media screen and (max-width: 400px) 
+    
+    .col-3
+        display: none
+
+    .tweet-navbar
+        display: none
+
+
+//  ************** MIDDLE PART ************ 
+
+    
+.home 
+    border-bottom: 1px solid #e5e5e5
+    width: 100%
+    padding-bottom: 15px
+
+.svg-messages
+    display: flex
+    flex-direction: row-reverse
+    flex-wrap: wrap
+    margin-top: -7%
+
+
+.happening-middle 
+    float: right
+    margin-top: -6%    
+    margin-right: 62%
+    color: #5B7083
+
+
+li
+    list-style-type: none
+
+.arrow
+    margin-top: 0.5em
+    color : #b0b0b0
+
+.loupe 
+    width: 20px
+    color: blue
+    height: 20px
+    margin-top: -17%
+    margin-left: 3%
+
+.col-4
+    border-right: 1px solid #a7a1a1 
+    border-left: 1px solid #a7a1a1 
+    height: 100vh
+
+.searchbar-control-main 
+    border-radius: 70px
+    border: 1px solid #EBEEF0
+    background-color: #EBEEF0
+    padding: 10px 0 10px 6%
+    padding-left: 16%
+    width: 95%
+    margin-top: 2%
+// ********** RIGHT PART ***********
+
+.text-message
+    margin-left: 25%
+    margin-top: 135%
+    padding-left: 10%
+    width: 60%
+    border: none
+    height: 2.5em
+    background-color: rgb(235, 231, 231)
+
+.svg-icons
+    border: 1px solid #252525
+    margin-left: 10%
+    margin-top: -7.4%
+    padding-top: 1%
+    width: 23%
+    border: none
+    height: 2.5em
+    border-radius: 20px
+    background-color: rgb(235, 231, 231)
+
+.send
+.send:hover
+    cursor: pointer
+    fill: #ff97b7
+
+.info
+    float: right
+    margin-top: 5%
+
+.inputmsg 
+    border-radius: 5px
+    padding: 6px 0px 2px 31px
+
+.message-page
+    display: flex 
+    align-items: center
+
+.col-5 
+    align-items: flex-end !important
+.colmsg
+    height: 100vh
+
+.contain-msg
+    height: 75vh
+.infos-msg
+    margin-top: 5%
+    margin-left: 5%
+    margin-bottom: 5%
+    display: flex
+    align-items: center
+    height: 30px
+.img-fluid
+    width: 100%
+    height: auto
+
+.date
+    margin-left: 5%
+    font-size: 0.8em
+    font-family: 'gill sans', sans-serif
+    color: black
+    float: left
+
+.containat
+    width: 100%
+    max-height: 400px
+    overflow-y: auto
+    margin-top: 10px
+
+.imgat
+    clip-path: circle(50% at 50% 50%)
+.rowat
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0
+    padding: 0
+    margin-top: 10px
+    margin-bottom: 10px
+    margin-left: 10px
+    margin-right: 10px
+    padding-left: 10px
+    padding-right: 10px
+    padding-top: 10px
+    padding-bottom: 10px
+    border-bottom: 1px solid #a7a1a1
+    border-top: 1px solid #a7a1a1
+    border-left: 1px solid #a7a1a1
+    border-right: 1px solid #a7a1a1
+    border-radius: 10px
+    background-color: #f7ebef
+    cursor: pointer
+    &:hover
+        background-color: #ff97b7
+        cursor: pointer
+    .imgat
+        width: 50px
+        height: 50px
+        clip-path: circle(50% at 50% 50%)
+    .nameat
+        font-size: 0.8em
+        font-weight: bold
+    .at
+        font-size: 0.8em
+        font-weight: bold
+        color: #5B7083
+    .tweetat
+        font-size: 0.8em
+        font-weight: bold
+        color: #5B7083
+    .threadat
+        font-size: 0.8em
+        font-weight: bold
+        color: #5B7083
+        cursor: pointer
+        &:hover
+            color: #ff97b7
+            cursor: pointer
+    .tweetlogoat
+        width: 20px
+        margin-right: 10px
+        cursor: pointer
+    .tweettxtat
+        font-size: 0.8em
+        font-weight: bold
+        color: #5B7083
+    .threadat
+        font-size: 0.8em
+        font-weight: bold
+        color: #5B7083
+        cursor: pointer
+        &:hover
+            color: #ff97b7
+            cursor: pointer
+    .threadat
+        font-size: 0.8em
+        font-weight: bold
+
+.author-tweet
+    color: black
+    font-size: 0.8em
+
+.text-black *
+    color: black !important
+.contain-msg
+    overflow-y: scroll
+    width: 100%
+    margin-top: 60px
+    word-wrap: break-word
+    * 
+        margin: 0
+        padding: 0
+
+.sender
+    background-color: blue
+    color: white
+    border-radius: 10px
+    padding: 10px
+    margin: 10px
+.sended
+    background: #ff97b7
+    color: white
+    border-radius: 10px
+    padding: 10px
+    margin: 10px
+    align-self: flex-end
+    text-align: right
+
+textarea
+    resize: none
+    width: 80%
+    height: 2.5em
+    border: none
+
+.message-page
+    border-radius: 10px
+    margin-left: 5%

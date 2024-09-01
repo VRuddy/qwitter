@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css" integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-reboot.min.css" integrity="sha512-ZJ+KmS7LSGuRKphz9V5eX99TPMci9Ngt5lCk0XFdYJmBg+ZDr/4r/HSsMEiUKmR7bxe1eAv768c2YuSl/OGiFw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.js" integrity="sha512-A/D/17S8jG62ka9f3jPwMs+bKGJ1f/xQts7bAUjTIKQf0anTGjlpuEz3q9q++3qRAVYKS3iVx6KzM8GPtIaYfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href=../css/profil.css>
+        <link rel="stylesheet" href="../css/search.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" >
+        <title>Qwitten</title>
+    </head>
+    <body>
+        <div class="zindex3 visually-hidden followedzindex">
+            <div class="followed-list">
+                <i style="font-size: 1.2em; color: black;" class="fa-solid fa-x"></i>
+            </div>
+        </div>
+        <div class="zindex3 visually-hidden followerzindex">
+            <div class="follower-list">
+                <i style="font-size: 1.2em; color: black;"  class="fa-solid fa-x"></i>
+            </div>
+        </div>
+    <div class="zindex2 visually-hidden">
+        <div class="form-inscription step2">
+            <div class="row">
+                <div class="col-1">
+                <i style="font-size: 1.2em;" class="fa-solid fa-x"></i>
+                </div><div class="col-11"></div> 
+            </div>
+                <div class="form-group">
+                    <input class="input" type="file" id="file1">
+                    <label class="" for="file1">Photo de profil</label>
+                </div>
+                <div class="form-group">
+                    <input class="input" type="file" id="file2">
+                    <label class="" for="file2">Bannière</label>
+                </div>
+                <div class="form-group">
+                    <input class="text" type="text" id="username-header" maxlength="50">
+                    <label class="" for="username-header">Pseudo</label>
+                </div>
+                <div class="form-group">
+                    <input class="text" type="text" id="location" maxlength="160">
+                    <label class="" for="location">Position</label>
+                </div>
+                <div class="form-group">
+                    <input class="text" type="text" id="link-header" maxlength="255">
+                    <label class="" for="link-header">Lien site</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="bio" maxlength="160"></textarea>
+                    <label class="" for="bio">Bio</label>
+                </div>
+            <div class="form-group">
+                <button type="button" name="btn-change-profil" class="btn btn-outline-primary btnprofil disabled mx-3">Connexion</button>
+            </div>
+        </div>
+    </div>
+        <div class="container zindex1">
+            <div class="row">
+                <div class="col-3 left">
+                    <div class="row">
+                        <div class="logo">
+                            <a href="main.html">
+                                <img src="img/logo.png" class="img-fluid" alt="logo">
+                            </a>                            
+                            <p class="responsive-font-example">Qwitten <a href="main.html"></a></p>
+                        </div>
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-black p-1 linkleftpart" href="main.html">
+                                <svg  width="40" height="24" viewBox="0 0 26 26">
+                                    <path d="M28.2251 9.18744L15.5938 2.37119C15.2226 2.17119 14.7763 2.17119 14.4063 2.37119L1.78132 9.18744C1.17382 9.51744 0.947569 10.2749 1.27507 10.8824C1.50007 11.3012 1.93132 11.5387 2.37507 11.5387C2.57507 11.5387 2.78007 11.4912 2.96882 11.3887L3.88632 10.8937L5.87382 24.9562C6.14382 26.4737 7.51132 27.5337 9.19882 27.5337H20.8013C22.4888 27.5337 23.8563 26.4737 24.1288 24.9237L26.1138 10.8924L27.0351 11.3899C27.6413 11.7187 28.4001 11.4924 28.7276 10.8849C29.0563 10.2774 28.8276 9.51869 28.2226 9.19119L28.2251 9.18744ZM15.0001 19.2937C12.7563 19.2937 10.9376 17.4749 10.9376 15.2312C10.9376 12.9874 12.7563 11.1687 15.0001 11.1687C17.2438 11.1687 19.0626 12.9874 19.0626 15.2312C19.0626 17.4749 17.2438 19.2937 15.0001 19.2937Z" fill="#FF5E80" class="colorsvg"></path>
+                                </svg>
+                                <span class = "text-banniere">Accueil</span>
+                            </a>
+                            <a class="nav-link p-1 linkleftpart text-black" href="main.html">
+                                <svg  width="40" height="24" viewBox="0 0 26 28">
+                                    <path d="M24.25 7.1713H19.3375L19.8025 1.8313C19.8475 1.3163 19.465 0.862554 18.95 0.816304C18.4288 0.778804 17.98 1.1538 17.935 1.67005L17.4562 7.17005H9.55625L10.0187 1.83255C10.065 1.3163 9.68125 0.862554 9.16875 0.816304C8.64375 0.778804 8.1975 1.1538 8.1525 1.67005L7.675 7.17005H2.7275C2.21 7.17005 1.79 7.5913 1.79 8.10755C1.79 8.6238 2.21 9.04505 2.7275 9.04505H7.5125L6.825 16.9538H1.75C1.2325 16.9538 0.8125 17.3738 0.8125 17.8913C0.8125 18.4088 1.2325 18.8288 1.75 18.8288H6.6625L6.1975 24.1688C6.1525 24.6838 6.535 25.1376 7.05 25.1838L7.1325 25.1876C7.61375 25.1876 8.0225 24.8188 8.065 24.3301L8.54375 18.8301H16.4438L15.9813 24.1676C15.9363 24.6838 16.3188 25.1376 16.8338 25.1838L16.9163 25.1876C17.3975 25.1876 17.8062 24.8188 17.8487 24.3301L18.3262 18.8301H23.2725C23.7888 18.8301 24.21 18.4088 24.21 17.8926C24.21 17.3763 23.7888 16.9551 23.2725 16.9551H18.4875L19.175 9.0463H24.25C24.7675 9.0463 25.1875 8.6263 25.1875 8.1088C25.1875 7.5913 24.7675 7.1713 24.25 7.1713V7.1713ZM16.6063 16.9538H8.70625L9.39375 9.0463H17.2938L16.6063 16.9538Z" class="colorsvg"></path>
+                                </svg>
+                                <span class = "text-banniere">Explorer</span>
+                            </a>
+                            <a class="nav-link p-1 linkleftpart text-black" href="#">
+                                <svg  width="40" height="24" viewBox="0 0 26 28">
+                                    <path d="M27.1212 20.585C27.0962 20.565 24.4462 18.535 24.4925 13.0475C24.5175 9.88251 23.4775 7.07001 21.5587 5.12876C19.84 3.38751 17.5125 2.42501 15.0062 2.41251H14.99C12.485 2.42501 10.1575 3.38751 8.43748 5.13001C6.51998 7.07126 5.47748 9.88251 5.50498 13.0475C5.55123 18.46 2.97998 20.5063 2.87748 20.585C2.55248 20.8263 2.41998 21.2475 2.54623 21.6325C2.67373 22.0175 3.03373 22.2763 3.43623 22.2763H9.58623C9.71373 25.1638 12.0825 27.4763 14.9987 27.4763C17.915 27.4763 20.2812 25.1638 20.4075 22.2763H26.56C26.9625 22.2763 27.3225 22.0188 27.4475 21.6338C27.5762 21.25 27.4437 20.8275 27.1187 20.5863L27.1212 20.585ZM15 25.5975C13.1187 25.5975 11.5875 24.1263 11.465 22.275H18.535C18.41 24.125 16.8812 25.6 15 25.6V25.5975ZM5.47498 20.4C6.39998 18.985 7.40998 16.615 7.37998 13.03C7.35748 10.33 8.18498 8.05251 9.77123 6.44626C11.1375 5.06251 12.9962 4.29626 15 4.28751C17.0037 4.29751 18.8587 5.06251 20.225 6.44751C21.8125 8.05376 22.6412 10.33 22.6187 13.0313C22.5887 16.6163 23.6 18.9875 24.525 20.4013H5.47498V20.4Z" class="colorsvg"></path>
+                                </svg>
+                                <span class = "text-banniere">Notifications</span>
+                            </a>
+                            <a class="nav-link p-1 linkleftpart text-black" href="message.html">
+                                <svg  width="40" height="24" viewBox="0 0 26 28">
+                                    <path d="M24.0625 3.77249H5.9375C4.04125 3.77249 2.5 5.31499 2.5 7.21249V22.8312C2.5 24.7287 4.04125 26.2725 5.9375 26.2725H24.0625C25.9587 26.2725 27.5 24.7287 27.5 22.8312V7.21249C27.5 5.31499 25.9587 3.77249 24.0625 3.77249ZM5.9375 5.64749H24.0625C24.925 5.64749 25.625 6.34749 25.625 7.20999V8.10249L15.5625 14.8112C15.2212 15.0362 14.78 15.0387 14.4375 14.8087L4.375 8.10249V7.20999C4.375 6.34749 5.075 5.64749 5.9375 5.64749V5.64749ZM24.0625 24.395H5.9375C5.075 24.395 4.375 23.695 4.375 22.8325V10.3L13.425 16.3375C13.9037 16.6575 14.4525 16.8175 15 16.8175C15.55 16.8175 16.0963 16.6575 16.575 16.3387L25.625 10.3012V22.8287C25.625 23.6912 24.925 24.3912 24.0625 24.3912V24.395Z" class="colorsvg"></path>
+                                </svg>
+                                <span class = "text-banniere">Messages</span>
+                            </a>
+                            <a class="nav-link p-1 linkleftpart text-black" href="#">
+                                <svg  width="40" height="24" viewBox="0 0 26 28">
+                                    <path d="M24.875 29.375C24.6787 29.375 24.485 29.3125 24.3225 29.195L15 22.41L5.6775 29.1975C5.3925 29.4025 5.015 29.435 4.7 29.2725C4.3875 29.1137 4.1875 28.7912 4.1875 28.4387V7C4.1875 5.45 5.45 4.1875 7 4.1875H22.9975C24.5475 4.1875 25.81 5.45 25.81 7V28.4375C25.81 28.79 25.6125 29.1125 25.2975 29.2725C25.165 29.3412 25.0188 29.375 24.8725 29.375H24.875ZM15 20.3125C15.1937 20.3125 15.3875 20.3725 15.55 20.4925L23.9375 26.5963V7C23.9375 6.485 23.5162 6.0625 23 6.0625H7C6.48375 6.0625 6.0625 6.485 6.0625 7V26.5963L14.45 20.4925C14.6125 20.3725 14.8062 20.3125 15 20.3125V20.3125Z" class="colorsvg"></path>
+                                </svg>
+                                <span class = "text-banniere">Marque-page</span>
+                            </a>
+                            <a class="nav-link text-black p-1 linkleftpart" href="#">
+                                <svg  width="40" height="24" viewBox="0 0 26 28">
+                                    <path d="M21.25 10.8H8.75C8.2325 10.8 7.8125 10.3787 7.8125 9.86249C7.8125 9.34624 8.2325 8.92499 8.75 8.92499H21.25C21.7675 8.92499 22.1875 9.34374 22.1875 9.86249C22.1875 10.3812 21.7675 10.8 21.25 10.8ZM21.25 15.9375H8.75C8.2325 15.9375 7.8125 15.5175 7.8125 15C7.8125 14.4825 8.2325 14.0625 8.75 14.0625H21.25C21.7675 14.0625 22.1875 14.4825 22.1875 15C22.1875 15.5175 21.7675 15.9375 21.25 15.9375ZM15 21.075H8.75C8.2325 21.075 7.8125 20.6562 7.8125 20.1375C7.8125 19.6187 8.2325 19.2 8.75 19.2H15C15.5175 19.2 15.9375 19.6212 15.9375 20.1375C15.9375 20.6537 15.5175 21.075 15 21.075Z" class="colorsvg"></path>
+                                </svg>
+                                <span class = "text-banniere">Listes</span>
+                            </a>
+                            <a class="nav-link text-black p-1 linkleftpart" href="profil.html">
+                                <svg  width="40" height="24" viewBox="0 0 26 28">
+                                    <path d="M15 14.77C16.6938 14.77 18.59 14.5825 19.8 13.2C20.8175 12.0375 21.1475 10.24 20.8075 7.71001C20.3325 4.17876 18.1613 2.07001 15 2.07001C11.8388 2.07001 9.6675 4.17876 9.1925 7.71251C8.8525 10.24 9.1825 12.0375 10.2 13.2C11.41 14.5838 13.3063 14.77 15 14.77V14.77ZM11.05 7.96001C11.2525 6.46001 12.0338 3.94501 15 3.94501C17.9663 3.94501 18.7475 6.46126 18.95 7.96001C19.2088 9.89751 19.0213 11.2438 18.3875 11.9663C17.8188 12.6163 16.805 12.895 15 12.895C13.195 12.895 12.1813 12.6163 11.6125 11.9663C10.9788 11.2438 10.7913 9.89626 11.05 7.96001ZM25.35 24.045C24.2538 19.6375 19.9975 16.5575 15 16.5575C10.0025 16.5575 5.74625 19.6375 4.65 24.045C4.435 24.91 4.615 25.795 5.14375 26.47C5.65375 27.12 6.44375 27.495 7.31 27.495H22.69C23.5563 27.495 24.3463 27.12 24.8563 26.47C25.3863 25.795 25.565 24.9113 25.3488 24.045H25.35ZM23.38 25.315C23.2225 25.515 22.985 25.6225 22.69 25.6225H7.31C7.01625 25.6225 6.7775 25.5163 6.62 25.315C6.44875 25.0975 6.395 24.8 6.47 24.4975C7.3575 20.9288 10.8663 18.435 15 18.435C19.1338 18.435 22.6425 20.9275 23.53 24.4975C23.605 24.8 23.5513 25.0975 23.38 25.315V25.315Z" class="colorsvg"></path>
+                                </svg>
+                                <span class = "text-banniere">Profil</span>
+                            </a>
+                            <a class="deco nav-link text-black p-1 linkleftpart" href="#">
+                                <svg  width="40" height="24" viewBox="0 0 26 28">
+                                    <path d="M20.625 12.8125C19.4188 12.8125 18.4375 13.7963 18.4375 15C18.4375 16.2037 19.4175 17.1875 20.625 17.1875C21.83 17.1875 22.8125 16.205 22.8125 15C22.8125 13.795 21.83 12.8125 20.625 12.8125ZM20.625 15.9375C20.1075 15.9375 19.6875 15.5175 19.6875 15C19.6875 14.4838 20.1088 14.0625 20.625 14.0625C21.1412 14.0625 21.5625 14.4825 21.5625 15C21.5625 15.5162 21.1425 15.9375 20.625 15.9375ZM15 12.8125C13.7925 12.8125 12.8125 13.7963 12.8125 15C12.8125 16.2037 13.7938 17.1875 15 17.1875C16.2062 17.1875 17.1875 16.205 17.1875 15C17.1875 13.795 16.2075 12.8125 15 12.8125ZM15 15.9375C14.4825 15.9375 14.0625 15.5175 14.0625 15C14.0625 14.4838 14.4838 14.0625 15 14.0625C15.5162 14.0625 15.9375 14.4825 15.9375 15C15.9375 15.5162 15.5175 15.9375 15 15.9375ZM9.375 12.8125C8.16875 12.8125 7.1875 13.7963 7.1875 15C7.1875 16.2037 8.16875 17.1875 9.375 17.1875C10.58 17.1875 11.5625 16.205 11.5625 15C11.5625 13.795 10.5787 12.8125 9.375 12.8125ZM9.375 15.9375C8.8575 15.9375 8.4375 15.5175 8.4375 15C8.4375 14.4838 8.85875 14.0625 9.375 14.0625C9.89125 14.0625 10.3125 14.4825 10.3125 15C10.3125 15.5162 9.8925 15.9375 9.375 15.9375Z" class="colorsvg"></path>
+                                </svg>
+                                <span class="text-bannier">Plus
+                                    <div class="decod d-none">
+                                        <p class="logout" onclick="logout()">Déconnexion</p>
+                                        <p class="deletea"onclick="deletea()">Supprimer le Compte</p>
+                                    </div> 
+                                    </span>
+                            </a>  
+                        </li>
+                        <li style="list-style: none;">
+                            <a href="main.html">
+                                <button type="button" class="tweet-navbar">Tweet</button>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="profile-more">
+                            <img src="/img/pp-chicken.png" alt="avatar" class="avatar-min">
+                            <div class="avatar-text" style="margin-left: 5%">
+                                <p class="avatar-name"><br>
+                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <i class="ri-moon-fill" id="toggleDark"></i>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="profil-header">
+                            <a class="nav-link p-1 text-black" href="main.html">
+                                <svg width="40" height="24" viewBox="0 0 26 26" class="arrow">
+                                    <g>
+                                        <path d="M7.414 13l5.043 5.04-1.414 1.42L3.586 12l7.457-7.46 1.414 1.42L7.414 11H21v2H7.414z"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                            <ul>
+                                <li class="profil-name"></li>
+                                <li class="numbers-tweets">0 Tweets</li>
+                            </ul>
+                        </div>
+                        <div class="header-pics"></div>
+                        <img src="/img/pp-chicken.png" id="pp-chicken" alt="profil-pic" class="img-fluid img-profil pp-chickn">
+                    </div>
+                    <div class="row info-profil">
+                        <button class="button-profil">Configurer le profil</button>
+                        <ul class="bio-profil">
+                            <li class="header-bio-name"></li>
+                            <li class="header-bio" id="username-bio"></li>
+                            <li class="bio-header"></li>
+                            <li class="link-header"></li>
+                            <li class="header-bio-date">
+                                <svg width="24" height="24" viewBox="0 0 24 24" class="header-date" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.9999 14.315C9.91189 14.315 8.21289 12.617 8.21289 10.529C8.21289 8.44099 9.91289 6.73999 11.9999 6.73999C14.0869 6.73999 15.7869 8.43999 15.7869 10.527C15.7869 12.614 14.0869 14.312 11.9999 14.312V14.315ZM11.9999 8.24199C10.7399 8.24199 9.71289 9.26799 9.71289 10.529C9.71289 11.79 10.7399 12.814 11.9999 12.814C13.2599 12.814 14.2869 11.789 14.2869 10.528C14.2869 9.26699 13.2599 8.23999 11.9999 8.23999V8.24199Z" fill="#5B7083" />
+                                    <path d="M20.6921 10.69C20.6921 5.9 16.7921 2 12.0001 2C7.20811 2 3.30811 5.9 3.30811 10.69C3.30811 12.592 3.91111 14.398 5.05111 15.913L5.05411 15.911L5.06111 15.926C6.68911 17.996 11.3391 21.683 11.5361 21.838C11.6741 21.948 11.8381 22.001 12.0011 22.001C12.1641 22.001 12.3281 21.948 12.4661 21.839C12.6631 21.684 17.3131 17.999 18.9411 15.927L18.9481 15.913L18.9501 15.915C20.0901 14.399 20.6921 12.595 20.6921 10.692V10.69ZM12.0001 20.29C10.7761 19.3 7.48011 16.575 6.24411 15.005C5.30411 13.755 4.80811 12.263 4.80811 10.693C4.80811 6.727 8.0351 3.5 12.0001 3.5C15.9651 3.5 19.1921 6.726 19.1921 10.69C19.1921 12.26 18.6951 13.752 17.7561 15.003C16.5201 16.573 13.2241 19.297 12.0001 20.288V20.29Z" fill="#5B7083" />
+                                </svg> <span id='locationaffi'></span> <svg width="24" height="24" viewBox="0 0 24 24" class="localisation" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.708 2H4.292C3.028 2 2 3.028 2 4.292V19.708C2 20.972 3.028 22 4.292 22H19.708C20.972 22 22 20.972 22 19.708V4.292C22 3.028 20.972 2 19.708 2ZM20.5 19.708C20.5 20.145 20.145 20.5 19.708 20.5H4.292C3.855 20.5 3.5 20.145 3.5 19.708V6.418C3.5 5.981 3.854 5.628 4.29 5.626H19.71C20.146 5.626 20.5 5.981 20.5 6.416V19.71V19.708Z" fill="#5B7083" />
+                                    <path d="M7.03207 10.035C7.74176 10.035 8.31707 9.45965 8.31707 8.74997C8.31707 8.04028 7.74176 7.46497 7.03207 7.46497C6.32238 7.46497 5.74707 8.04028 5.74707 8.74997C5.74707 9.45965 6.32238 10.035 7.03207 10.035Z" fill="#5B7083" />
+                                    <path d="M7.03207 14.441C7.74176 14.441 8.31707 13.8657 8.31707 13.156C8.31707 12.4463 7.74176 11.871 7.03207 11.871C6.32238 11.871 5.74707 12.4463 5.74707 13.156C5.74707 13.8657 6.32238 14.441 7.03207 14.441Z" fill="#5B7083" />
+                                    <path d="M16.9681 10.035C17.6778 10.035 18.2531 9.45965 18.2531 8.74997C18.2531 8.04028 17.6778 7.46497 16.9681 7.46497C16.2584 7.46497 15.6831 8.04028 15.6831 8.74997C15.6831 9.45965 16.2584 10.035 16.9681 10.035Z" fill="#5B7083" />
+                                    <path d="M16.9681 14.441C17.6778 14.441 18.2531 13.8657 18.2531 13.156C18.2531 12.4463 17.6778 11.871 16.9681 11.871C16.2584 11.871 15.6831 12.4463 15.6831 13.156C15.6831 13.8657 16.2584 14.441 16.9681 14.441Z" fill="#5B7083" />
+                                    <path d="M11.9998 10.035C12.7095 10.035 13.2848 9.45965 13.2848 8.74997C13.2848 8.04028 12.7095 7.46497 11.9998 7.46497C11.2902 7.46497 10.7148 8.04028 10.7148 8.74997C10.7148 9.45965 11.2902 10.035 11.9998 10.035Z" fill="#5B7083" />
+                                    <path d="M11.9998 14.441C12.7095 14.441 13.2848 13.8657 13.2848 13.156C13.2848 12.4463 12.7095 11.871 11.9998 11.871C11.2902 11.871 10.7148 12.4463 10.7148 13.156C10.7148 13.8657 11.2902 14.441 11.9998 14.441Z" fill="#5B7083" />
+                                    <path d="M7.03207 18.771C7.74176 18.771 8.31707 18.1957 8.31707 17.486C8.31707 16.7764 7.74176 16.201 7.03207 16.201C6.32238 16.201 5.74707 16.7764 5.74707 17.486C5.74707 18.1957 6.32238 18.771 7.03207 18.771Z" fill="#5B7083" />
+                                    <path d="M11.9998 18.771C12.7095 18.771 13.2848 18.1957 13.2848 17.486C13.2848 16.7764 12.7095 16.201 11.9998 16.201C11.2902 16.201 10.7148 16.7764 10.7148 17.486C10.7148 18.1957 11.2902 18.771 11.9998 18.771Z" fill="#5B7083" />
+                                </svg> <span id='datecrea'>A rejoint Twitter en mars 2023</span>
+                            </li>
+                            <li class="header-bio">
+                                <a class="numbers-follow"></a> abonnement <a class="numbers-followers"></a> abonnés
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row filter">
+                        <div class="col-3">
+                            <span>Tweets</span>
+                        </div>
+                        <div class="col-3">
+                            <span>Tweet & replies</span>
+                        </div>
+                        <div class="col-3">
+                            <span>Media</span>
+                        </div>
+                        <div class="col-3">
+                            <span>Likes</span>
+                        </div>
+                    </div>
+                    <div class="row rtwt m-5">
+                        
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="searchbar-main">
+                            <input type="search" class="searchbar-control-main searchbar-controls" list='searchuwu' placeholder="Rechercher sur qwitten...">
+                            <datalist id='searchuwu'>
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class ="right">
+                    <div class="slider-right-profil">
+                        <div class="row">
+                            <h5 class="happening"> Vous pourriez aimer</h5>
+                        </div>
+                        <div class="col-auto">
+                            <img src="img/a-follow1.png" class="who-follow1" alt="logo qui follow">
+                            <span class="follow-name1">Bessie Cooper</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class ="certif" d="M22.25 12C22.25 10.57 21.37 9.33 20.06 8.66C20.52 7.27 20.26 5.76 19.25 4.75C18.24 3.74 16.73 3.48 15.34 3.94C14.68 2.63 13.43 1.75 12 1.75C10.57 1.75 9.33 2.63 8.67 3.94C7.27 3.48 5.76 3.74 4.75 4.75C3.74 5.76 3.49 7.27 3.95 8.66C2.64 9.33 1.75 10.57 1.75 12C1.75 13.43 2.64 14.67 3.95 15.34C3.49 16.73 3.74 18.24 4.75 19.25C5.76 20.26 7.27 20.51 8.66 20.06C9.33 21.37 10.57 22.25 12 22.25C13.43 22.25 14.68 21.37 15.34 20.06C16.73 20.51 18.24 20.26 19.25 19.25C20.26 18.24 20.52 16.73 20.06 15.34C21.37 14.67 22.25 13.43 22.25 12ZM10.54 16.2L6.8 12.46L8.21 11.04L10.47 13.3L15.27 8.07L16.74 9.43L10.54 16.2Z" fill="#1D9BF0"/>
+                                </svg>
+                                
+                            <button type="button" class="btn btn-outline-primary">Suivre</button>
+                        </div>
+                        <div class="col-auto">
+                            <img src="img/a-follow2.png" class="who-follow2" alt="logo qui follow">
+                            <span class="follow-name2">Jessica Whamp</span>
+                            <svg  width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class ="certif" d="M22.25 12C22.25 10.57 21.37 9.33 20.06 8.66C20.52 7.27 20.26 5.76 19.25 4.75C18.24 3.74 16.73 3.48 15.34 3.94C14.68 2.63 13.43 1.75 12 1.75C10.57 1.75 9.33 2.63 8.67 3.94C7.27 3.48 5.76 3.74 4.75 4.75C3.74 5.76 3.49 7.27 3.95 8.66C2.64 9.33 1.75 10.57 1.75 12C1.75 13.43 2.64 14.67 3.95 15.34C3.49 16.73 3.74 18.24 4.75 19.25C5.76 20.26 7.27 20.51 8.66 20.06C9.33 21.37 10.57 22.25 12 22.25C13.43 22.25 14.68 21.37 15.34 20.06C16.73 20.51 18.24 20.26 19.25 19.25C20.26 18.24 20.52 16.73 20.06 15.34C21.37 14.67 22.25 13.43 22.25 12ZM10.54 16.2L6.8 12.46L8.21 11.04L10.47 13.3L15.27 8.07L16.74 9.43L10.54 16.2Z" fill="#1D9BF0"/>
+</svg>
+                            <button type="button" class="btn btn-outline-primary">Suivre</button>
+                        </div>
+                        <div class="col-auto">
+                            <img src="img/a-follow1.png" class="who-follow1" alt="logo qui follow">
+                            <span class="follow-name1">EmmanuelMacron</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class ="certif" d="M22.25 12C22.25 10.57 21.37 9.33 20.06 8.66C20.52 7.27 20.26 5.76 19.25 4.75C18.24 3.74 16.73 3.48 15.34 3.94C14.68 2.63 13.43 1.75 12 1.75C10.57 1.75 9.33 2.63 8.67 3.94C7.27 3.48 5.76 3.74 4.75 4.75C3.74 5.76 3.49 7.27 3.95 8.66C2.64 9.33 1.75 10.57 1.75 12C1.75 13.43 2.64 14.67 3.95 15.34C3.49 16.73 3.74 18.24 4.75 19.25C5.76 20.26 7.27 20.51 8.66 20.06C9.33 21.37 10.57 22.25 12 22.25C13.43 22.25 14.68 21.37 15.34 20.06C16.73 20.51 18.24 20.26 19.25 19.25C20.26 18.24 20.52 16.73 20.06 15.34C21.37 14.67 22.25 13.43 22.25 12ZM10.54 16.2L6.8 12.46L8.21 11.04L10.47 13.3L15.27 8.07L16.74 9.43L10.54 16.2Z" fill="#1D9BF0"/>
+                                </svg>
+                                
+                            <button type="button" class="btn btn-outline-primary">Suivre</button>
+                        </div>
+                        <div class="row">
+                            <p class="show-more">Show more</p>
+                        </div>
+                    </div>
+                    <div class="slider-right-profil-two">
+                        <div class="row">
+                            <h5 class="happening">Tendances pour toi</h5>
+                        </div>
+                        <button class="tendances">
+                            <span class="t-title">Technologie · Tendances</span>
+                            <span class="t-category">TikTok 
+                                <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5 0.25C10.535 0.25 9.75 1.037 9.75 2C9.75 2.963 10.534 3.75 11.5 3.75C12.464 3.75 13.25 2.964 13.25 2C13.25 1.036 12.464 0.25 11.5 0.25ZM11.5 2.75C11.086 2.75 10.75 2.414 10.75 2C10.75 1.587 11.087 1.25 11.5 1.25C11.913 1.25 12.25 1.586 12.25 2C12.25 2.413 11.914 2.75 11.5 2.75ZM7 0.25C6.034 0.25 5.25 1.037 5.25 2C5.25 2.963 6.035 3.75 7 3.75C7.965 3.75 8.75 2.964 8.75 2C8.75 1.036 7.966 0.25 7 0.25ZM7 2.75C6.586 2.75 6.25 2.414 6.25 2C6.25 1.587 6.587 1.25 7 1.25C7.413 1.25 7.75 1.586 7.75 2C7.75 2.413 7.414 2.75 7 2.75ZM2.5 0.25C1.535 0.25 0.75 1.037 0.75 2C0.75 2.963 1.535 3.75 2.5 3.75C3.464 3.75 4.25 2.964 4.25 2C4.25 1.036 3.463 0.25 2.5 0.25ZM2.5 2.75C2.086 2.75 1.75 2.414 1.75 2C1.75 1.587 2.087 1.25 2.5 1.25C2.913 1.25 3.25 1.586 3.25 2C3.25 2.413 2.914 2.75 2.5 2.75Z" fill="#0F1419"/>
+                                    </svg>
+                                    
+                            </span>
+                            <span class="t-tweets">591 k Tweets </span>
+                        </button>
+                        <button class="tendances">
+                            <span class="t-title">Tendance dans la catégorie France</span>
+                            <span class="t-category">St Jean 
+                                <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5 0.25C10.535 0.25 9.75 1.037 9.75 2C9.75 2.963 10.534 3.75 11.5 3.75C12.464 3.75 13.25 2.964 13.25 2C13.25 1.036 12.464 0.25 11.5 0.25ZM11.5 2.75C11.086 2.75 10.75 2.414 10.75 2C10.75 1.587 11.087 1.25 11.5 1.25C11.913 1.25 12.25 1.586 12.25 2C12.25 2.413 11.914 2.75 11.5 2.75ZM7 0.25C6.034 0.25 5.25 1.037 5.25 2C5.25 2.963 6.035 3.75 7 3.75C7.965 3.75 8.75 2.964 8.75 2C8.75 1.036 7.966 0.25 7 0.25ZM7 2.75C6.586 2.75 6.25 2.414 6.25 2C6.25 1.587 6.587 1.25 7 1.25C7.413 1.25 7.75 1.586 7.75 2C7.75 2.413 7.414 2.75 7 2.75ZM2.5 0.25C1.535 0.25 0.75 1.037 0.75 2C0.75 2.963 1.535 3.75 2.5 3.75C3.464 3.75 4.25 2.964 4.25 2C4.25 1.036 3.463 0.25 2.5 0.25ZM2.5 2.75C2.086 2.75 1.75 2.414 1.75 2C1.75 1.587 2.087 1.25 2.5 1.25C2.913 1.25 3.25 1.586 3.25 2C3.25 2.413 2.914 2.75 2.5 2.75Z" fill="#0F1419"/>
+                                    </svg>                                    
+                            </span>
+                            <span class="t-tweets">19,2k Tweets </span>
+                        </button>
+                        <button class="tendances">
+                            <span class="t-title">Politique · Tendancess</span>
+                            <span class="t-category">Macron 
+                                <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5 0.25C10.535 0.25 9.75 1.037 9.75 2C9.75 2.963 10.534 3.75 11.5 3.75C12.464 3.75 13.25 2.964 13.25 2C13.25 1.036 12.464 0.25 11.5 0.25ZM11.5 2.75C11.086 2.75 10.75 2.414 10.75 2C10.75 1.587 11.087 1.25 11.5 1.25C11.913 1.25 12.25 1.586 12.25 2C12.25 2.413 11.914 2.75 11.5 2.75ZM7 0.25C6.034 0.25 5.25 1.037 5.25 2C5.25 2.963 6.035 3.75 7 3.75C7.965 3.75 8.75 2.964 8.75 2C8.75 1.036 7.966 0.25 7 0.25ZM7 2.75C6.586 2.75 6.25 2.414 6.25 2C6.25 1.587 6.587 1.25 7 1.25C7.413 1.25 7.75 1.586 7.75 2C7.75 2.413 7.414 2.75 7 2.75ZM2.5 0.25C1.535 0.25 0.75 1.037 0.75 2C0.75 2.963 1.535 3.75 2.5 3.75C3.464 3.75 4.25 2.964 4.25 2C4.25 1.036 3.463 0.25 2.5 0.25ZM2.5 2.75C2.086 2.75 1.75 2.414 1.75 2C1.75 1.587 2.087 1.25 2.5 1.25C2.913 1.25 3.25 1.586 3.25 2C3.25 2.413 2.914 2.75 2.5 2.75Z" fill="#0F1419"/>
+                                    </svg>
+                                    
+                                </span>
+                            <span class="t-tweets">382 k Tweets </span>
+                        </button>
+                        <button class="tendances">
+                            <span class="t-title">Business et finance · Tendances</span>
+                            <span class="t-category">Meutre 
+                                <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5 0.25C10.535 0.25 9.75 1.037 9.75 2C9.75 2.963 10.534 3.75 11.5 3.75C12.464 3.75 13.25 2.964 13.25 2C13.25 1.036 12.464 0.25 11.5 0.25ZM11.5 2.75C11.086 2.75 10.75 2.414 10.75 2C10.75 1.587 11.087 1.25 11.5 1.25C11.913 1.25 12.25 1.586 12.25 2C12.25 2.413 11.914 2.75 11.5 2.75ZM7 0.25C6.034 0.25 5.25 1.037 5.25 2C5.25 2.963 6.035 3.75 7 3.75C7.965 3.75 8.75 2.964 8.75 2C8.75 1.036 7.966 0.25 7 0.25ZM7 2.75C6.586 2.75 6.25 2.414 6.25 2C6.25 1.587 6.587 1.25 7 1.25C7.413 1.25 7.75 1.586 7.75 2C7.75 2.413 7.414 2.75 7 2.75ZM2.5 0.25C1.535 0.25 0.75 1.037 0.75 2C0.75 2.963 1.535 3.75 2.5 3.75C3.464 3.75 4.25 2.964 4.25 2C4.25 1.036 3.463 0.25 2.5 0.25ZM2.5 2.75C2.086 2.75 1.75 2.414 1.75 2C1.75 1.587 2.087 1.25 2.5 1.25C2.913 1.25 3.25 1.586 3.25 2C3.25 2.413 2.914 2.75 2.5 2.75Z" fill="#0F1419"/>
+                                    </svg>
+                            </span>
+                            <span class="t-tweets">91 k Tweets </span>
+                        </button>
+                        <div class="row">
+                            <p class="show-more">Show more</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/modules/main.js"></script>
+        <script src="/modules/profil.js"></script>
+        <script src="/modules/follow.js"></script>
+        <script src="/modules/search.js"></script>
+        <script src="/modules/logout.js"></script>
+        <script src="../modules/comment.js"></script>
+        <script src="../modules/theme.js"></script>
+    </body>
+</html>

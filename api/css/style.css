@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Dangrek&family=Karla&family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  margin-right: 10%; }
+
+.col-3 {
+  height: 90vh; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 20%;
+  margin-top: 10px; }
+
+.responsive-font-example {
+  font-family: "Dangrek", cursive;
+  margin-top: 5%;
+  margin-left: 15%;
+  font-size: x-large; }
+
+.nav-item {
+  font-size: 1.2em;
+  font-weight: 300;
+  list-style-type: none;
+  margin-top: 10%;
+  text-decoration: none;
+  padding-bottom: 15%;
+  display: grid; }
+
+li {
+  font-size: 1.2em;
+  font-weight: 300;
+  list-style-type: none;
+  margin-top: 15%;
+  margin-left: 23%; }
+
+.explorer {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 15%; }
+
+span {
+  margin-left: 5%; }
+
+.hastag {
+  fill: black;
+  margin-left: 2%; }
+
+.setting {
+  display: flex;
+  text-decoration: none;
+  color: black; }
+
+.img-more {
+  width: 8%;
+  float: left;
+  margin-right: 15px; }
+
+#connexion {
+  width: 30%;
+  height: 40px;
+  background-color: #ff7096;
+  border: none; }
+
+#connexion:hover {
+  background-color: #f0688e;
+  border: 0.5px solid white; }
+
+#inscription {
+  width: 25%;
+  height: 40px;
+  background-color: #fbe9ee;
+  border: none; }
+
+#inscription:hover {
+  background-color: #e2d3d7;
+  border: 0.5px solid white; }
+
+.col-6 {
+  border-right: 1px solid #a7a1a1;
+  border-left: 1px solid #a7a1a1; }
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.searchbar-control {
+  border-radius: 20px;
+  border: 1px solid #EBEEF0;
+  background-color: #EBEEF0;
+  margin-top: 5px;
+  padding: 10px 0 10px 8%;
+  width: 80%;
+  height: 45px; }
+
+.searchbar-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #cc00ff; }
+
+.loupe {
+  width: 20px;
+  color: blue;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  position: absolute; }
+
+.nav-bar-settings {
+  position: relative;
+  margin-left: 84%;
+  margin-top: -5%; }
+
+.title {
+  margin-top: 5%;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif; }
+
+.tendances {
+  border: none;
+  background-color: none;
+  border-block: none;
+  border-inline: none;
+  text-align: left;
+  background-color: white;
+  height: 5.8em;
+  margin-bottom: 0.1em; }
+
+.tendances:hover {
+  background-color: #f3f3f3; }
+
+.t-title {
+  font-size: 0.8em;
+  color: #d5d3d3;
+  margin-bottom: 1px;
+  color: #696969;
+  font-family: Helvetica, sans-serif; }
+
+.t-category {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1px; }
+
+.t-tweets {
+  font-size: 0.8em;
+  color: #696969;
+  ont-family: Helvetica, sans-serif; }
+
+.more {
+  float: right; }
+
+.slider-right {
+  border: 1px solid #EBEEF0;
+  margin-top: 15px;
+  border-radius: 20px;
+  width: 100%;
+  height: 20em;
+  margin-left: 7%; }
+
+.new {
+  padding-top: 5%;
+  font-family: bold;
+  font-family: "Dangrek", cursive; }
+
+.google {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-top: 2px; }
+
+.apple {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-top: 2px; }
+
+.new-2 {
+  font-size: 0.8em; }
+
+.btn-light {
+  border-radius: 42px;
+  font-size: 1em;
+  width: 88%;
+  margin-top: 3%;
+  margin-left: 8%; }
+
+.text-new {
+  margin-top: 5%;
+  font-size: 0.7em; }
+
+.condition {
+  font-size: 0.7em;
+  margin-top: 5%;
+  margin-left: 7%; }
+
+footer {
+  background-color: #FF92A9;
+  height: 10vh;
+  overflow: hidden;
+  width: 100vw; }
+
+.top-text {
+  color: #FFFFFF;
+  margin-left: 18%;
+  margin-top: 10px; }
+
+.down-text {
+  color: #FFFFFF;
+  margin-left: 18%; }
+
+.connexion {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4%; }
+
+.btn-outline-primary {
+  border-radius: 42px;
+  border: white solid 1px;
+  font-size: 0.9em;
+  color: white;
+  margin-right: 5%; }
+
+.btn-light-1 {
+  border-radius: 42px;
+  background-color: white;
+  font-size: 0.9em; }
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  margin-right: 0.5em;
+  border-radius: 50em;
+  background: url(../View/img/times-circle-svg.png) no-repeat 50% 50%;
+  background-size: contain;
+  opacity: 1; }
+
+/*# sourceMappingURL=style.css.map */
