@@ -98,13 +98,13 @@ function follows() {
                 if (response.data[i].profile_picture === null) {
                     $(img2).attr("src", "/img/pp-chicken.png");
                 } else {
-                    $(img2).attr("src", "http://145.239.142.113:34567/" + response.data[i].profile_picture);
+                    $(img2).attr("src", "../model/upload/" + response.data[i].profile_picture);
                     $(pp2).attr("onclick", "window.location.href = 'profil.html?id=" + response.data[i].id + "'");
                 }
                 if (response.data[i].profile_picture === null) {
                     $(pp2).attr("src", "/img/pp-chicken.png");
                 } else {
-                    $(pp2).attr("src", "http://145.239.142.113:34567/" + response.data[i].profile_picture);
+                    $(pp2).attr("src", "../model/upload/" + response.data[i].profile_picture);
                     pp2.classList.add("list-item");
                     $(pp2).css("color", "black");
                     $(pp2).css("font-size", "15px");
@@ -156,13 +156,13 @@ function follows() {
                     if (response.data[o].profile_picture === null) {
                         $(img1).attr("src", "/img/pp-chicken.png");
                     } else {
-                        $(img1).attr("src", "http://145.239.142.113:34567/" + response.data[o].profile_picture);
+                        $(img1).attr("src", "../model/upload/" + response.data[o].profile_picture);
                         $(pp1).attr("onclick", "window.location.href = 'profil.html?id=" + response.data[o].id + "'");
                     }
                     if (response.data[o].profile_picture === null) {
                         $(pp1).attr("src", "/img/pp-chicken.png");
                     } else {
-                        $(pp1).attr("src", "http://145.239.142.113:34567/" + response.data[o].profile_picture);
+                        $(pp1).attr("src", "../model/upload/" + response.data[o].profile_picture);
                         pp1.classList.add("list-item");
                         $(pp1).css("color", "black");
                         $(pp1).css("font-size", "15px");

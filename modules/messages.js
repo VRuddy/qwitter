@@ -19,7 +19,7 @@ $(".searchbar-control-main").on("input", function () {
             let col = $("<div class=''col-2''></div>");
             let img = $("<img src='' alt=''>");
             row.attr("iduser", response.data[o].id_account_follow);
-            if (response.data[o].profile_picture !== null) img.attr("src", "http://145.239.142.113:34567/" + response.data[o].profile_picture);
+            if (response.data[o].profile_picture !== null) img.attr("src", "../model/upload/" + response.data[o].profile_picture);
             else img.attr("src", "/img/pp-chicken.png");
             img.addClass("img-fluid");
             img.addClass("imgat")
@@ -38,7 +38,7 @@ $(".searchbar-control-main").on("input", function () {
                     $(".colmsg-r").removeClass("d-none")
                     $(".msgcontain").remove();
                     console.log(response.data);
-                    if (response.data.profile_picture !== null) $(".img-msg").attr("src", "http://145.239.142.113:34567/" + response.data.profile_picture);
+                    if (response.data.profile_picture !== null) $(".img-msg").attr("src", "../model/upload/" + response.data.profile_picture);
                     else $(".img-msg").attr("src", "/img/pp-chicken.png");
                     $(".img-msg").css({
                         "border-radius": "50%",
@@ -95,7 +95,7 @@ function resfreshMp(time = 0) {
                 const img = $("<img src='' alt=''>");
                 const colimg = $("<div class='col-2'></div>");
                 const colmsg = $("<div class='col-12'></div>");
-                if (response.data[o].profile_picture !== null) img.attr("src", "http://145.239.142.113:34567/" + response.data[o].profile_picture);
+                if (response.data[o].profile_picture !== null) img.attr("src", "../model/upload/" + response.data[o].profile_picture);
                 else img.attr("src", "/img/pp-chicken.png");
                 img.addClass("img-fluid");
                 img.addClass("img-msg");
@@ -117,7 +117,7 @@ function resfreshMp(time = 0) {
                 const img = $("<img src='' alt=''>");
                 const colimg = $("<div class='col-2'></div>");
                 const colmsg = $("<div class='col-12'></div>");
-                if (response.data[o].profile_picture !== null) img.attr("src", "http://145.239.142.113:34567/" + response.data[o].profile_picture);
+                if (response.data[o].profile_picture !== null) img.attr("src", "../model/upload/" + response.data[o].profile_picture);
                 else img.attr("src", "/img/pp-chicken.png");
                 img.addClass("img-fluid");
                 img.addClass("img-msg");
@@ -158,16 +158,16 @@ axios.post("../controllers/profil.php", data).then(function (response) {
     $(".avatar-text").append("<p>" + response.data[0].full_name + "<br>" + "@" + response.data[0].username + "</p>");
     $("#datecrea").text("A rejoint Twitter en " + datecreation);
     $(".numbers-tweets")
-    if (response.data[val].header !== null) $(".header-pics").css("background-image", "url(http://145.239.142.113:34567/" + response.data[val].header + ")");
+    if (response.data[val].header !== null) $(".header-pics").css("background-image", "url(../model/upload/" + response.data[val].header + ")");
     if (response.data[val].profile_picture !== null) {
-        $("#pp-chicken").attr("src", "http://145.239.142.113:34567/" + response.data[val].profile_picture);
+        $("#pp-chicken").attr("src", "../model/upload/" + response.data[val].profile_picture);
     } else {
         $("#pp-chicken").attr("src", "/img/pp-chicken.png");
     }
     if (response.data[0].profile_picture !== null) {
         $(".avatar-middle").addClass("img-fluid");
-        $(".avatar-middle").attr("src", "http://145.239.142.113:34567/" + response.data[0].profile_picture);
-        $(".avatar-min").attr("src", "http://145.239.142.113:34567/" + response.data[0].profile_picture);
+        $(".avatar-middle").attr("src", "../model/upload/" + response.data[0].profile_picture);
+        $(".avatar-min").attr("src", "../model/upload/" + response.data[0].profile_picture);
     } else {
         $(".avatar-middle").addClass("img-fluid");
         $(".avatar-middle").attr("src", "/img/pp-chicken.png");

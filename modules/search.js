@@ -88,7 +88,7 @@ select.on("input", function () {
                         response.data[i].profile_picture = (
                             response.data[i].profile_picture === null
                             ? "/img/pp-chicken.png"
-                            : "http://145.239.142.113:34567/" + response.data[i].profile_picture
+                                : "../model/upload/" + response.data[i].profile_picture
                         );
                         if (localStorage.getItem("theme") === "dark") {
                             $(".search-containdark").append(

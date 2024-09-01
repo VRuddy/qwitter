@@ -67,7 +67,7 @@ $(".happening-middle").on("input", function () {
                 let row = $("<div class='row rowat'></div>");
                 let col = $("<div class='col-2'></div>");
                 let img = $("<img src='' alt=''>");
-                img.attr("src", "http://145.239.142.113:34567/" + response.data[0].profile_picture);
+                img.attr("src", "../model/upload/" + response.data[0].profile_picture);
                 img.addClass("img-fluid");
                 img.addClass("imgat");
                 col.append(img);

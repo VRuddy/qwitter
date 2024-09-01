@@ -26,7 +26,7 @@ function showComments(idtweet, elem) {
             const rowcomment = $("<div class='row'></div>");
             const imagecontain = $("<div class='col-2'></div>");
             const image = $(
-                "<img class='img-fluid rounded-circle' src='http://145.239.142.113:34567/" +
+                "<img class='img-fluid rounded-circle' src='../model/upload/" +
                 response.data[i].profile_picture +
                 "' width='40' height='40'>"
             );

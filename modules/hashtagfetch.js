@@ -8,16 +8,16 @@ function timeline(x = 0) {
     response) {
         for (let i = x; i < response.data.length; i++) {
             let imgpath1 = response.data[i].media_1 !== null ?
-                "http://145.239.142.113:34567/" + response.data[i]
+                "../model/upload/" + response.data[i]
                 .media_1 : null;
             let imgpath2 = response.data[i].media_2 !== null ?
-                "http://145.239.142.113:34567/" + response.data[i]
+                "../model/upload/" + response.data[i]
                 .media_2 : null;
             let imgpath3 = response.data[i].media_3 !== null ?
-                "http://145.239.142.113:34567/" + response.data[i]
+                "../model/upload/" + response.data[i]
                 .media_3 : null;
             let imgpath4 = response.data[i].media_4 !== null ?
-                "http://145.239.142.113:34567/" + response.data[i]
+                "../model/upload/" + response.data[i]
                 .media_4 : null;
             $(".deco").on("click", function() {
                 if ($(".decod").hasClass("d-none")) {
@@ -29,7 +29,7 @@ function timeline(x = 0) {
             const middle = $("<div>").attr("class",
                 "box-middle, col-11");
             const image = $("<img>").attr("src",
-                "http://145.239.142.113:34567/" + response.data[i]
+                "../model/upload/" + response.data[i]
                 .profile_picture);
             image.attr("class", "avatar-middle-two");
             const nameh = $("<span>").attr("class", "name-middle");

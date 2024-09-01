@@ -2,12 +2,12 @@ function timeline(x = 0){
 axios.post("../controllers/followmain.php")
 .then(function (response) {
     for(let i = x; i < response.data.length; i++){
-        let imgpath1 = response.data[i].media_1 !== null ? "http://145.239.142.113:34567/"+response.data[i].media_1 : null;
-        let imgpath2 = response.data[i].media_2 !== null ? "http://145.239.142.113:34567/"+response.data[i].media_2 : null;
-        let imgpath3 = response.data[i].media_3 !== null ? "http://145.239.142.113:34567/"+response.data[i].media_3 : null;
-        let imgpath4 = response.data[i].media_4 !== null ? "http://145.239.142.113:34567/"+response.data[i].media_4 : null;
+        let imgpath1 = response.data[i].media_1 !== null ? "../model/upload/"+response.data[i].media_1 : null;
+        let imgpath2 = response.data[i].media_2 !== null ? "../model/upload/"+response.data[i].media_2 : null;
+        let imgpath3 = response.data[i].media_3 !== null ? "../model/upload/"+response.data[i].media_3 : null;
+        let imgpath4 = response.data[i].media_4 !== null ? "../model/upload/"+response.data[i].media_4 : null;
         const middle = $("<div>").attr("class", "box-middle, col-11");
-        const image = $("<img>").attr("src", "http://145.239.142.113:34567/" + response.data[i].profile_picture);
+        const image = $("<img>").attr("src", "../model/upload/" + response.data[i].profile_picture);
         image.attr("class", "avatar-middle-two");
         image.attr("onclick", "window.location.href = 'profil.html?id=" + response.data[i].id_account_follow+ "'");
         const nameh = $("<span>").attr("class", "name-middle");
@@ -229,14 +229,14 @@ axios.post("../controllers/profil.php", data)
     $("#datecrea").text("A rejoint Twitter en " + datecreation);
     $(".numbers-tweets")
     if(response.data[val].header !== null)
-    $('.header-pics').css('background-image', 'url(http://145.239.142.113:34567/' + response.data[val].header + ')');
+    $('.header-pics').css('background-image', 'url(../model/upload/' + response.data[val].header + ')');
     if(response.data[val].profile_picture !== null){
-    $('#pp-chicken').attr('src', "http://145.239.142.113:34567/" + response.data[val].profile_picture);
+    $('#pp-chicken').attr('src', "../model/upload/" + response.data[val].profile_picture);
 }
 if(response.data[0].profile_picture !== null){
     $(".avatar-middle").addClass("img-fluid");
-    $('.avatar-middle').attr('src', "http://145.239.142.113:34567/" + response.data[0].profile_picture);
-    $('.avatar-min').attr('src', "http://145.239.142.113:34567/" + response.data[0].profile_picture); 
+    $('.avatar-middle').attr('src', "../model/upload/" + response.data[0].profile_picture);
+    $('.avatar-min').attr('src', "../model/upload/" + response.data[0].profile_picture); 
     $("#locationaffi").text(response.data[val].location);
     
 }else{
